@@ -1,5 +1,5 @@
 //
-// Created by Abs Tawfik Mko Galoyan on 21/09/2017.
+// Created by Abs Tawfik on 21/09/2017.
 //
 
 #ifndef SEARCHENGINE_SORT_H
