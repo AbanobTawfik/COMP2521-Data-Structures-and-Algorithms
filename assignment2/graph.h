@@ -1,6 +1,6 @@
 // graph.h ... Interface to Graph of strings
 // Written by John Shepherd, September 2015
-
+ 
 #ifndef SEARCHENGINE_GRAPH_H
 #define SEARCHENGINE_GRAPH_H
 
