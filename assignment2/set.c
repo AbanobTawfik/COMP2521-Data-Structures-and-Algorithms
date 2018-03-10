@@ -1,6 +1,6 @@
 // set.c ... simple, inefficient Set of Strings
 // Written by John Shepherd, September 2015
-
+ 
 #include <stdlib.h>
 #include <stdio.h>
 #include <assert.h>
