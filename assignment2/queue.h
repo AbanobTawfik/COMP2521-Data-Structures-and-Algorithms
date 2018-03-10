@@ -1,6 +1,6 @@
 // queue.h ... interface to simple Queue of Strings
 // Written by John Shepherd, September 2015
-
+ 
 #ifndef SEARCHENGINE_QUEUE_H
 #define SEARCHENGINE_QUEUE_H
 
