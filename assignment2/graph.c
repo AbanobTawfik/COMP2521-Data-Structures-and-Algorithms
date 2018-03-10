@@ -1,6 +1,6 @@
 // graph.c ... Graph of strings (adjacency matrix)
 // Written by John Shepherd, September 2015
-
+ 
 /*
  * added in our own functions
  * we added in vertexname,outgoing,outbound functions to allow pagerank to be completed easily
