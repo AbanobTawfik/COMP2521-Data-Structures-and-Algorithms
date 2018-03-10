@@ -1,0 +1,58 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Abs Tawfik/CLionProjects/graph/Graph.c
+stdlib.h
+-
+stdio.h
+-
+assert.h
+-
+string.h
+-
+Graph.h
+C:/Users/Abs Tawfik/CLionProjects/graph/Graph.h
+Queue.h
+C:/Users/Abs Tawfik/CLionProjects/graph/Queue.h
+Item.h
+C:/Users/Abs Tawfik/CLionProjects/graph/Item.h
+
+C:/Users/Abs Tawfik/CLionProjects/graph/Graph.h
+stdio.h
+-
+
+C:/Users/Abs Tawfik/CLionProjects/graph/Item.h
+Graph.h
+C:/Users/Abs Tawfik/CLionProjects/graph/Graph.h
+
+C:/Users/Abs Tawfik/CLionProjects/graph/Queue.c
+stdlib.h
+-
+stdio.h
+-
+assert.h
+-
+Item.h
+C:/Users/Abs Tawfik/CLionProjects/graph/Item.h
+Queue.h
+C:/Users/Abs Tawfik/CLionProjects/graph/Queue.h
+
+C:/Users/Abs Tawfik/CLionProjects/graph/Queue.h
+Item.h
+C:/Users/Abs Tawfik/CLionProjects/graph/Item.h
+
+C:/Users/Abs Tawfik/CLionProjects/graph/travel.c
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+Graph.h
+C:/Users/Abs Tawfik/CLionProjects/graph/Graph.h
+
