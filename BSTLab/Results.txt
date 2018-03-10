@@ -1,0 +1,123 @@
+Results for Tests on 5000 values
+
+Depth = depth of tree, Cost = average #comparisons per search
+
+
+             Ascending Order        Prefix Order        Random Order
+Insert
+Method       Depth      Cost     Depth      Cost     Depth      Cost
+
+L         ___200__  ___132__  ___8____  ___7____  __15____  __8_____
+
+A         ___200__  ___69___  ___128__  ___45___  __15____  __8_____
+
+R         ___106__  ___39___  ___72___  ___27___  __16____  __9____
+
+B         ___12___  ___9____  ___10___  ___7____  __9_____  __7_____
+
+S         ___NAN__  ___5____  ___NIL__  ___4____  __NUP___  __4_____  DEPTH IS CHANGING
+
+V         ___8____  ___7____  ___9____  ___8____  __9_____  __7_____
+
+
+Notes (what the above indicates):
+
+what the above indicates is quite interesting will give in dot points
+
+
+ASCENDNG ORDER
+ruins property of tree will be 1 sided with standard inserts 
+_______________________________________________________________________
+****L AKA standard insert****
+- very cost heavy to do a search in comparison to all other searches 
+- with standard insert will keep inserting node to right if ascending order
+
+****A AKA at root insert****
+- very cost heavy to do a search in comparison to all other searches 
+- not as cost heavy as the standard insert
+- rotates tree when inserting
+- note balanced, its sort of reverse insert of normal insert
+
+****R AKA random insert****
+- changes between root and standard insert
+- in ascending order will be worse than root since it varies with a  worse insert for this data type
+- depth is not same as A and L rebalanced for insert with rotate
+
+****B AKA periodic rebalance****
+- rebalances the tree periodically with standard insert
+- reduces depth alot along with other rebalance methods
+- reduces search cost greatly since tree is rebalanced 
+
+****S AKA splay insert****
+- changing depths (wot ikr)
+- more balanced than periodic rebalance since it queries entries in
+- in general ascending order makes very little difference
+
+****V AKA AVL tree****
+- self banacing tree absolutely best will make depth low all the time
+- the only thing better for search/depth is a prefix with normal BST insert the entire thing bout BST
+- same comments as splay in general order makes very little difference
+___________________________________________________________________________
+PREFIX ORDER
+standard BST insert
+
+_______________________________________________________________________
+****L AKA standard insert****
+- the standard insert with a BST insert O(1) extremely effective
+- VERY LOW cost and depth aswell
+
+****A AKA at root insert****
+- very high cost and depth
+- as explained before it will do a sort of reverse order insert
+
+****R AKA random insert****
+- since its a mix of standard and root will be worse than standard by alot
+- but alot better than root insert, depends on ratio of standard/root insert
+- might mess up the nice prefix nature of standard insert with the root inserts mixed in
+
+****B AKA periodic rebalance****
+- like stated above the rebalancing is very nice and will produce the same results for nearly all input types
+- rebalancing doesnt really need to occur as it is already balanced on insertion
+
+****S AKA splay insert****
+- same as stated before it is very cost effective to use this all round
+- queries the input and performs rebalance so overall low depth
+
+****V AKA AVL tree****
+- self balancing for all inputs should be same very cost effective
+- despite input being prefix it is still going to be very cost effective
+- low depth due to self balancing (but data balanced anyways)
+_______________________________________________________________________
+____
+RANDOM ORDER
+standard BST insert
+
+_______________________________________________________________________
+****L AKA standard insert****
+- due to nature of random inputs and how bst works, depth will be low depends on input
+- better than ascending because the data doesnt correlate to previous data 
+- obviously worse than prefix but average cost effective 
+
+****A AKA at root insert****
+- same as for standard input dependnat on data but the insertroot and rotating is generally average here
+- defines a BST so its average lowish depth lowish cost
+
+****R AKA random insert****
+- since both root insert and standard are so similair for random data , random insert will also be roughly the same
+- depends on data obviously but since its a mix of both should be around the same as both since all basically same
+
+****B AKA periodic rebalance****
+- this is where cost and depth starts becoming significantly lower 
+- since it rebalances the tree periodically will obviously have lower depth and be a more compact tree
+- leads to a higher cost efficiency 
+
+****S AKA splay insert****
+- same as stated before it is very cost effective to use this all round
+- queries the input and performs rebalance so overall low depth
+- look ups are O(logn) efficiency
+
+****V AKA AVL tree****
+- self balancing for all inputs should be same very cost effective
+- for random inputs will keep tree balanced at all time extremely efficient for this
+- low depth low cost
+________________________________________________________________________

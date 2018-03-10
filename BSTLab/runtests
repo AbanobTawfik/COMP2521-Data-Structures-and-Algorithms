@@ -1,0 +1,24 @@
+#!/bin/sh
+
+size=200
+
+for insert in L A B R S V
+do
+	for count in $(seq 10)
+	do	
+		seed=$$
+
+		for order in A
+		do
+			#random seed
+			echo ""
+			#add random seed as parameter
+			echo "Test: ./tlab $size $order $insert $seed"
+			echo "t" | ./tlab $size $order $insert $seed | grep -v Tree >>output$count
+		done 
+
+	done
+done
+
+# want to make a test result for each new seed
+# store each test output in a different directory
