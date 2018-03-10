@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Abs Tawfik/CLionProjects/maps/Places.c
+stdlib.h
+-
+assert.h
+-
+string.h
+-
+Places.h
+C:/Users/Abs Tawfik/CLionProjects/maps/Places.h
+
+C:/Users/Abs Tawfik/CLionProjects/maps/Places.h
+
+C:/Users/Abs Tawfik/CLionProjects/maps/nnn.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+Places.h
+C:/Users/Abs Tawfik/CLionProjects/maps/Places.h
+
